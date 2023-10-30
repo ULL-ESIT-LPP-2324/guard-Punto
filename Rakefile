@@ -1,7 +1,7 @@
-task :default => :spec
+task :default => :doit
 
 desc "Ejecutar las espectativas de la clase Punto"
-task :spec do
+task :doit do
   sh "rspec -I. spec/punto_spec.rb"
 end
 
